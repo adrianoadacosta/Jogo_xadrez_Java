@@ -43,7 +43,7 @@ public class UI {
 			int row = Integer.parseInt(s.substring(1));
 			return new ChessPosition(column, row);
 		} catch (RuntimeException e) {
-			throw new InputMismatchException("Erro ao iniciar as posições - elas devem ser entre a1 ate h8");
+			throw new InputMismatchException("Erro ao iniciar as posiçoes - elas devem ser entre a1 ate h8");
 		}
 
 	}
