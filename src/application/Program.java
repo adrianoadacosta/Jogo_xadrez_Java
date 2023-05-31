@@ -41,8 +41,9 @@ public class Program {
 				}
 				
 				if (chessMatch.getPromoted() != null) {
-					System.out.print("Entre com a peca para promocao em maiusculo (B / N / R / Q): ");
+					System.out.print("Entre com a peca para promocao (B / N / R / Q): ");
 					String type = sc.nextLine();
+					type = type.toUpperCase();
 					chessMatch.replacePromotedPiece(type);
 				}
 				
